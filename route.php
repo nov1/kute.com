@@ -1,6 +1,7 @@
 <?
 //developer B add some code to route...
-//new coder A made some changes 2
+//new coder A made some changes 2 - leave this comment!!!!
+
 	switch ($route) {
 		case NULL:
 			include_once "view/main.tpl"; //главная страница
