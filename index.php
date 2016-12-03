@@ -8,6 +8,7 @@ route=contacts - Контакты
 */
 
 //SOME CHANGES FOR GIT TESTS 22222
+//developer A add some code to index...
 
 if (!$_COOKIE["basket"]) {
 	setcookie("basket",serialize([]),time()+60*60*24*30,"/"); //записать пустой массив в корзину
