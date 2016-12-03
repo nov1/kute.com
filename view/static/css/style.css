@@ -1,0 +1,505 @@
+
+/* 
+ *	Name: Responsive layout;
+ *	Author: Andor Nagy;
+ *	Website : andornagy.com;
+ *	
+------------------------------------------
+ * 
+ *	Responsive Layout is lightweight css and html layout 
+ *	that can help you kickstart your website development.
+ *
+ *	You are free to use this framework for you own projects
+ *	and for client works. Credit is always welcome.
+ *
+ *	DO NOT sell it as your own work.
+ *  
+--------------------------------------------- */
+
+
+
+/* General Styles
+--------------------------------------------- */
+
+html,
+body
+{
+    height: 100%;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Imports
+--------------------------------------------- */
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+
+
+/* Helper Classes
+--------------------------------------------- */
+
+.clearfix
+{
+    display: block;
+    clear: both;
+}
+
+
+/* Typography
+--------------------------------------------- */
+
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+
+    word-wrap: break-word !important;
+
+    color: #333;
+}
+
+p
+{
+    margin: 0 0 4px;
+    margin: 0 0 4px;
+    padding: 0;
+}
+
+
+/* Links
+--------------------------------------------- */
+
+a
+{
+    text-decoration: none;
+
+    color: #ff5722;
+}
+
+a:hover
+{
+    text-decoration: underline;
+
+    color: #e64a19;
+}
+
+
+
+/* Headings
+--------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+
+    margin: 0 0 16px;
+
+    color: #333;
+}
+
+h1
+{
+    font-size: 40px;
+}
+
+h2
+{
+    font-size: 30px;
+}
+
+h3
+{
+    font-size: 24px;
+}
+
+h4
+{
+    font-size: 20px;
+}
+
+h5
+{
+    font-size: 18px;
+}
+
+h6
+{
+    font-size: 16px;
+}
+
+
+
+/* Sections
+--------------------------------------------- */
+
+#wrapper
+{
+    display: flex;
+    flex-direction: column;
+
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+
+/* Header
+--------------------------------------------- */
+
+header
+{
+    width: 94%;
+    padding: 3%;
+
+    color: #fff;
+    background-color: #ff5722;
+}
+
+header #title
+{
+    font-size: 50px;
+
+    color: #fff;
+}
+
+header a
+{
+    color: #fff;
+}
+
+header a:hover
+{
+    color: #fff;
+}
+
+.header-contact
+{
+    font-size: 14px;
+
+    display: inline-block;
+
+    width: 32%;
+    padding: 28px 0 0;
+
+    vertical-align: top;
+}
+.logo
+{
+    display: inline-block;
+
+    width: 35%;
+
+    text-align: center;
+    vertical-align: top;
+    text-decoration: none;
+}
+.header-right
+{
+    font-size: 14px;
+
+    display: inline-block;
+    float: right;
+
+    width: 32%;
+    padding: 28px 0 0;
+
+    text-align: right;
+    vertical-align: top;
+}
+
+.work-time
+{
+    font-weight: 300;
+
+    margin: 0 0 3px;
+
+    color: #666;
+}
+
+.header-contact-list
+{
+    margin: 0 0 -2px;
+}
+
+/* Navigation
+--------------------------------------------- */
+
+nav
+{
+    width: 97%;
+    padding: 0 1.5% 0 1.5%;
+
+    background-color: #e64a19;
+}
+
+nav ul li
+{
+    display: inline-block;
+
+    padding: 15px 1.5% 15px 1.5% ;
+}
+
+nav ul li a
+{
+    font-size: 1.2em;
+
+    text-decoration: none;
+
+    color: #fff;
+}
+
+nav ul li a:hover
+{
+    text-decoration: none;
+
+    color: #000;
+}
+
+
+
+/* Content
+--------------------------------------------- */
+
+#content
+{
+    float: left;
+
+    width: 64%;
+    padding: 3%;
+}
+
+#main
+{
+    flex: 1 0 auto;
+}
+
+/* Sidebar
+--------------------------------------------- */
+
+aside
+{
+    float: right;
+
+    width: 24%;
+    padding: 3%;
+
+    background-color: #eee;
+}
+
+
+
+/* Footer
+--------------------------------------------- */
+
+footer
+{
+    width: 94%;
+    padding: 3%;
+
+    text-align: center;
+
+    color: #fff;
+    border-top: 5px solid #e64a19;
+    background-color: #ff5722;
+
+    flex: 0 0 auto;
+}
+
+
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 768px)
+{
+    header
+    {
+        text-align: center;
+    }
+    nav
+    {
+        text-align: center;
+    }
+    #content
+    {
+        width: 94%;
+        padding: 3%;
+    }
+    #sidebar
+    {
+        width: 94%;
+        padding: 3%;
+
+        border-top: 3px solid #e64a19;
+    }
+}
+/*
+@media all and (max-width : 330px) {
+
+	nav ul li {
+		display:block;
+		width: 94%;
+	}
+
+}
+*/
+
+img.super-price
+{
+    width: 159px;
+    height: 62px;
+
+    background-image: url(/view/static/img/sprite.png);
+    background-position: 0 -4702px;
+}
+
+img.top-sales
+{
+    width: 159px;
+    height: 62px;
+
+    background-image: url(/view/static/img/sprite.png);
+    background-position: 0 -4702px;
+}
+
+img.action
+{
+    width: 149px;
+    height: 62px;
+
+    background-image: url(/view/static/img/sprite.png);
+    background-position: 0 -4830px;
+}
+
+img.imgGood
+{
+    height: 200px;
+}
+
+.total-price{
+    font-weight: 500;
+}
+
+.align-center {
+    text-align: center;
+    position: relative;
+}
+
+.link {
+    cursor: pointer;
+    font-size: 13px;
+    color: #333;
+    line-height: 1;
+    display: inline-block;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.button {
+    min-width: 280px;
+    margin: 0 0 24px;
+}
+
+hr.bold {
+    color: #555; /*для IE */
+    background-color:#555; /*для Firefox, Opera, Safari*/
+    border:0px none;
+    height:2px; /* высота 1px IE, Firefox, Opera, Safari */
+    clear:both; /* для очистки, если тег идет после float елемента */
+}
+
+
+.section-block {
+    padding-top: 2.8125em;
+    padding-bottom: 2.8125em;
+    border-color: #984949;
+}
+
+.grid-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 46.875em)
+.grid-container--quarters .grid-item:nth-child(4n+1) {
+    clear: left;
+}
+
+.grid-item {
+    float: left;
+    position: relative;
+}
+
+.grid-2 {
+    width: 210px;
+    margin-right: 30px;
+}
+
+.theme_image {
+    display: block;
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #767676;
+}
+
+.theme_image img {
+    display: block;
+    border: 1px solid #e5e5e5;
+    width: 100%;
+}
+
+
+.table tr td {
+  padding: 5px 10px 5px 5px;
+}
+.puttable tr td {
+  padding: 5px 20px 5px 0;
+  text-align: right;
+}
+
+tr.even, tr.even a {
+    background: #666;
+    color: #fff;
+}
+
+
+.formBigCheck input[type=checkbox] {
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.nailed {
+text-align: right;
+
+
+}
