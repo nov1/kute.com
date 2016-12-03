@@ -7,7 +7,7 @@ route=contacts - Контакты
 404 - default
 */
 
-//SOME CHANGES FOR GIT TESTS 
+//SOME CHANGES FOR GIT TESTS 22222
 
 if (!$_COOKIE["basket"]) {
 	setcookie("basket",serialize([]),time()+60*60*24*30,"/"); //записать пустой массив в корзину
