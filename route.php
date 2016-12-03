@@ -1,4 +1,5 @@
 <?
+//developer B add some code to route...
 	switch ($route) {
 		case NULL:
 			include_once "view/main.tpl"; //главная страница
