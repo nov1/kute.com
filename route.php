@@ -1,6 +1,7 @@
 <?
 //developer B add some code to route...
 //new coder A made some changes 2 - leave this comment!!!!
+//new coder A made some changes 2 - leave this comment!!!! doubled
 
 	switch ($route) {
 		case NULL:
