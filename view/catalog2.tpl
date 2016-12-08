@@ -30,7 +30,7 @@ if ($_GET['sort']) {
 	$start = abs($page * $per_page);
 	$q = "SELECT `id`,`name`,`price`
 	FROM `goods`
-	WHERE public = 1
+	WHERE `public` = 1
 	"; //тут могла бы быть сортировка 
 
 	if ($sort) {
@@ -90,7 +90,7 @@ if ($_GET['sort']) {
 <div class="nailed">
 <?
 	//ссылки на страницы:
-	$q = "SELECT count(*) FROM `goods`";
+	$q = "SELECT count(*) FROM `goods` WHERE `public` = 1;";
 	$res = mysqli_query($dbc, $q);
 
 	$row = mysqli_fetch_row($res);

@@ -50,7 +50,7 @@
 			$rowColorNames = [];
 			for ($i=0; $i < $amount; $i++) { 
 				$queryGetColorNames = "
-				SELECT `color_name`
+				SELECT `color_name`, `color_class`
 				FROM `colors`
 				WHERE `id`= '".$goodColorsId[$i][0]."';
 			";
@@ -63,16 +63,11 @@
 			$rowColorNames[] = mysqli_fetch_row($resColorNames);
 			}
 
-
-
-			echo "<pre>";
-			// print_r($rowColorNames);
-			echo "</pre>";
-
 			//вывод во VIEW/HTML
 			if ($rowColorNames) {
 				for ($i=0; $i < count($rowColorNames); $i++) { 
 					echo "<p><b>".$rowColorNames[$i][0]."</b></p>";
+					echo "<p><b>".$rowColorNames[$i][1]."</b></p>";
 				}
 			}
 
@@ -125,6 +120,22 @@
 				<?}?>
 			<?}?>
 		</div>
+
+
+
+		<div class="colorsGood">
+			<br>
+			<?
+			if ($rowColorNames) {
+				for ($i=0; $i < count($rowColorNames); $i++) {?>
+					<a href="<?=$rowColorNames[$i][0]?>"><?=$rowColorNames[$i][0]?><img border ="1" style="background-color:<?=$rowColorNames[$i][1]?>;" src="/view/static/img/_.gif" width="24" height="24" alt="_"></a>
+				<?}
+			}?>
+
+		</div>
+
+
+
 		<div class="nameGood">
 			<?if($rowGood['name'])
 			{?>

@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.4.15.5
+-- version 4.4.15.7
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Дек 03 2016 г., 03:20
--- Версия сервера: 5.7.11
--- Версия PHP: 7.0.4
+-- Время создания: Дек 08 2016 г., 20:50
+-- Версия сервера: 5.7.13
+-- Версия PHP: 7.0.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -28,36 +28,37 @@ SET time_zone = "+00:00";
 
 CREATE TABLE IF NOT EXISTS `colors` (
   `id` int(10) unsigned NOT NULL,
-  `color_name` varchar(64) NOT NULL
+  `color_name` varchar(64) NOT NULL,
+  `color_class` varchar(64) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;
 
 --
 -- Дамп данных таблицы `colors`
 --
 
-INSERT INTO `colors` (`id`, `color_name`) VALUES
-(1, 'Dark Gray (темно-серый)'),
-(2, 'Light Gray (светло-серый)'),
-(3, 'Blue (синий)'),
-(4, 'Pink (Розовый)'),
-(5, 'Gold (золотой)'),
-(6, 'Orange (оранжевый)'),
-(7, 'Aqua (морская волна)'),
-(8, 'Black (черный)'),
-(9, 'Light Blue (голубой)'),
-(10, 'Fuchsia (фуксин)'),
-(11, 'Gray (серый)'),
-(12, 'Green (зеленый)'),
-(13, 'Lime (ярко-зеленый)'),
-(14, 'Maroon (темно-бордовый)'),
-(15, 'Navy (темно-синий)'),
-(16, 'Olive (оливковый)'),
-(17, 'Purple (фиолетовый)'),
-(18, 'Red (красный)'),
-(19, 'Silver (серебряный)'),
-(20, 'Teal (серо-зеленый)'),
-(21, 'White (белый)'),
-(22, 'Yellow (желтый)');
+INSERT INTO `colors` (`id`, `color_name`, `color_class`) VALUES
+(1, 'Dark Gray (темно-серый)', 'dark_gray'),
+(2, 'Light Gray (светло-серый)', 'light_gray'),
+(3, 'Blue (синий)', 'blue'),
+(4, 'Pink (Розовый)', 'pink'),
+(5, 'Gold (золотой)', 'gold'),
+(6, 'Orange (оранжевый)', 'orange'),
+(7, 'Aqua (морская волна)', 'aqua'),
+(8, 'Black (черный)', 'black'),
+(9, 'Light Blue (голубой)', 'light_blue'),
+(10, 'Fuchsia (фуксин)', 'fuchsia'),
+(11, 'Gray (серый)', 'gray'),
+(12, 'Green (зеленый)', 'green'),
+(13, 'Lime (ярко-зеленый)', 'lime'),
+(14, 'Maroon (темно-бордовый)', 'maroon'),
+(15, 'Navy (темно-синий)', 'navy'),
+(16, 'Olive (оливковый)', 'olive'),
+(17, 'Purple (фиолетовый)', 'purple'),
+(18, 'Red (красный)', 'red'),
+(19, 'Silver (серебряный)', 'silver'),
+(20, 'Teal (серо-зеленый)', 'teal'),
+(21, 'White (белый)', 'white'),
+(22, 'Yellow (желтый)', 'yellow');
 
 -- --------------------------------------------------------
 
