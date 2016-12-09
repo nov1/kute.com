@@ -2,7 +2,7 @@
 
 $storeName = 'MyStore';
 
-$myCopyright = 'Copyright &copy Yaroslav Novichuk 2016';
+$myCopyright = 'Copyright &copy Amir Mukhamedzianov 2016';
 
 $myContactPhohe = ['(044) 374 03 83','0(800) 50 77 40'];
 
