@@ -61,6 +61,10 @@ class Managers extends Workers
 		public function fire($name)
 		{
 			echo $this->position.' '.$this->name.', уволил с работы '.$name->position.' '.$name->name.'<br>';
+			var_dump($name);
+			// $name = null;
+			unset($name);
+			var_dump($name);
 		}
 
 	}
@@ -104,17 +108,14 @@ $dima->recruit($vova);
 $vova->working();
 $vova->getSalary();
 $boss->fire($dima);
-$dima->fire($boss);
+// $dima->fire($boss);
 
 
+echo '<pre>';
+var_dump(isset($dima));
+echo '</pre>';
 
-
-
-
-
-
-
-
+// echo assert(isset($dima));
 
 
 
