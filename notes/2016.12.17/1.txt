@@ -1,0 +1,11 @@
+is_a
+instanceOf
+
+MVC статья
+https://habrahabr.ru/post/150267/
+
+mvc.loc
+https://github.com/vitalyswipe/tinymvc/zipball/v0.1
+
+
+

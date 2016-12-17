@@ -1,8 +1,4 @@
 <?
-//добавить штрафы
-//добавить месяца пусть тикают по нумерам начиная со старта даты
-//
-//в увольнения сделать unset
 class Workers
 	{
 		protected $name;
@@ -78,6 +74,7 @@ class Directors extends Managers
 		//повышать в должности
 		public function upPosition($name, $newPosition)
 		{
+
 			echo $this->position.' '.$this->name.', повысил в должности '.$name->name.', с '.$name->position;
 			$name->position = $newPosition;
 			echo ' до '.$name->position.'<br>';
@@ -90,6 +87,13 @@ class Directors extends Managers
 			$name->position = $newPosition;
 			echo ' до '.$name->position.'<br>';
 			//можно ли тут сменить класс?
+		}
+
+		public function changeSalary($name, $newSalary)
+		{
+			echo $this->position.' '.$this->name.', изменил ЗП '.$name->name.', с '.$name->salary;
+			$name->salary = $newSalary;
+			echo ' на '.$name->salary.'<br>';
 		}
 		
 	}
@@ -108,19 +112,17 @@ $dima->recruit($vova);
 $vova->working();
 $vova->getSalary();
 $boss->fire($dima);
+$boss->changeSalary($vova,'1000');
 // $dima->fire($boss);
 
 
-echo '<pre>';
-var_dump(isset($dima));
-echo '</pre>';
+// echo '<pre>';
+// var_dump(isset($dima));
+// echo '</pre>';
 
 // echo assert(isset($dima));
 
+echo get_class($dima);
 
 
-
-//http://www.triconsole.com/php/oop.php
-//https://www.ibm.com/developerworks/library/os-php-7oohabits/
-//http://ruseller.com/lessons.php?id=1145
 ?>
